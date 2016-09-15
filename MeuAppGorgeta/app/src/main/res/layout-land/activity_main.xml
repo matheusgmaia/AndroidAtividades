@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.huawei.meuappgorgeta.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="142dp"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/iconImage"
+        android:src="@drawable/money"
+        android:layout_gravity="top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/valorDaConta"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textSize="26sp"
+            android:inputType="numberDecimal"
+            android:hint="@string/valor_da_conta"
+            android:padding="@dimen/activity_vertical_margin"
+            android:layout_gravity="center_horizontal"
+            android:text=""/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/activity_vertical_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/desconto_texto"
+                style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:layout_gravity="center_horizontal"
+                android:text="Gorjeta: 0%"/>
+
+            <SeekBar
+                android:max="30"
+                android:progress="0"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:padding="@dimen/activity_vertical_margin"
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:padding="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:text="@string/tip"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/valorDesconto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:layout_gravity="center_horizontal"
+        android:textSize="26sp"/>
+    <TextView
+        android:id="@+id/valorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:layout_gravity="center_horizontal"
+        android:textSize="26sp"/>
+
+
+
+</LinearLayout>
